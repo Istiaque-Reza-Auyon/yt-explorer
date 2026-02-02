@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Script from 'next/script';
-import { log } from 'console';
 
 // --- Type Definitions ---
 interface SearchParams {
