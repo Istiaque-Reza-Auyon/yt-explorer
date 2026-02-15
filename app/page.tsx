@@ -123,6 +123,8 @@ export default function YouTubeExplorer() {
         publishedAfterDate = new Date(
           Date.now() - 24 * 60 * 60 * 1000
         ).toISOString();
+      } else if (params.publishedAfter === 'any') {
+        publishedAfterDate = '1970-01-01T00:00:00Z';
       }
 
       // @ts-ignore
